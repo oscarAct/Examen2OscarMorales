@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Resgitrar";
+}
+
+<h2>Resgitrar</h2>
+
+<div class="container justify-content-center">
+
+    <div class="row w-75 ml-auto mr-auto py-3">
+        <div class="col-6">
+            <label>Seleccionar estado</label>
+            <br />
+            <select class="form-control custom-select col-12" id="estado">
+                <option value="Entrada">Entrada</option>
+                <option value="Salida">Salida</option>
+            </select>
+        </div>
+        <div class="col-6">
+            <label class="">Monto</label>
+            <br />
+            <input type="text" name="" id="monto" value="" class="form-control ml-auto col-12" />
+        </div>
+    </div>
+    <div class="row w-75 ml-auto mr-auto mt-3 py-3">
+        <div class="col-12">
+            <label>Descripcion</label>
+            <br />
+            <textarea class="form-control col-12" id="descripcion"></textarea>
+        </div>
+    </div>
+    <div class="row w-75 ml-auto mr-auto py-3">
+        <div class="col-6">
+            <label>Usuario</label>
+            <br />
+            <input type="text" name="name" id="usuario" class="form-control col-12" value="" />
+        </div>
+        <div class="col-6">
+            <label class="">Fecha</label>
+            <br />
+            <input type="text" name="" id="fecha" value="" disabled class="form-control ml-auto col-12" />
+        </div>
+    </div>
+    <div class="row w-75 ml-auto mr-auto mt-5 justify-content-end p-3">
+        <button class=" btn btn-secondary" id="btn-limpiar">
+            Limpiar
+        </button>
+        <button class=" btn btn-success ml-4" id="btn-registrar">
+            Registrar
+        </button>
+    </div>
+</div>
+@section Scripts
+{
+    @Scripts.Render("/js/app.js")
+}

@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container mt-5">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Vendedor</th>
+                <th scope="col">Fecha de venta</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpo-tabla">
+            
+        </tbody>
+    </table>
+    <div class="row">
+        <input type="text" name="name" id="vendedor" class="form-control mr-4" value="" placeholder="Nombre del vendedor" />
+        <input type="text" name="name" id="fechaventa" class="form-control mr-4" value="" placeholder="Fecha de la venta" />
+        <button class="btn btn-success" id="consultar" onclick="Buscar()">
+            Consultar
+        </button>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    @Scripts.Render("/js/app.js")
+}
